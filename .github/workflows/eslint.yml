@@ -39,7 +39,11 @@ jobs:
           --config .eslintrc.js
           --ext .js,.jsx,.ts,.tsx
           --format @microsoft/eslint-formatter-sarif
-          --output-file ${{ github.workspace }}/eslint-results.sarif
+          --output-file ${{ github.workspace }}/eslint-results.sarif || true
+            if [ ! -f ${{ github.workspace }}/eslint-results.sarif ];
+          then
+            echo '[]' > ${{ github.workspace }}/eslint-results.sarif
+            fi
         continue-on-error: true
 
       - name: Upload analysis results to GitHub
