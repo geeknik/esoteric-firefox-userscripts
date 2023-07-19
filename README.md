@@ -1,5 +1,5 @@
-# firefox-userscripts
-A collection of useful userscripts for Firefox, mostly for personal use, but these might interest bug bounty hunters, security & vulnerability researchers, osint researchers, etc.
+# esoteric-firefox-userscripts
+A collection of esoteric userscripts for Firefox, mostly for personal use, but these might interest bug bounty hunters, security & vulnerability researchers, osint researchers, etc. Scripts tested with FireMonkey and the latest non-beta release of Firefox. Scripts are likely compatible with your favorite userscript manager like TamperMonkey and ViolentMonkey. 
 
 
 # Disclaimer
