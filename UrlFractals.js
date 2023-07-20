@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name URL Fractal
+// @name URL Fractals
 // @version 0.3
-// @description Draws a unique fractal based on the full URL (Using Mandelbrot set as an example)
+// @description Draws a unique Mandelbrot fractal based upon the full URL
 // @author geeknik
 // @match *://*/*
 // @grant none
