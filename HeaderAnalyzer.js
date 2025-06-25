@@ -2,7 +2,7 @@
 // @name         Header Analyzer
 // @namespace    http://tampermonkey.net/
 // @version      0.5
-// @description  Analyze HTTP headers for potential security issues and display results in a pop-up modal window
+// @description  Analyze HTTP headers for potential security issues and display results in a floating overlay window
 // @author       geeknik
 // @match        *://*/*
 // @grant        GM_xmlhttpRequest
