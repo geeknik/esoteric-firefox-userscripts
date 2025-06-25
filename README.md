@@ -15,3 +15,12 @@ We are not responsible for any harm or damage caused by your use of our Software
 If you do not agree with this disclaimer, please do not use our Software. Your use of our Software signifies your agreement with this disclaimer.
 
 This disclaimer is subject to change without notice, and it is your responsibility to review this disclaimer periodically to ensure you are aware of its terms.
+
+## Testing
+
+Run unit tests using Node.js:
+
+```sh
+npm test
+```
+
