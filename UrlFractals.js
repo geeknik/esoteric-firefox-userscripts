@@ -23,11 +23,10 @@
         x: ((hash & 0xFFFF) / 0xFFFF) * 1 - 0.5, // Adjust range for x-offset (-0.5 to 0.5)
         y: ((hash >> 16 & 0xFFFF) / 0xFFFF) * 1 - 0.5 // Adjust range for y-offset (-0.5 to 0.5)
     };
-    // Bitwise operations in JavaScript operate on 32bit signed integers. The
-    // previous code attempted to use the upper 32 bits of `hash` which always
-    // resulted in zero. Use the absolute value of the hash instead so each URL
-    // generates a different zoom factor.
-    const zoom = 0.1 + (Math.abs(hash % 0x7fffffff) / 0x7fffffff) * 0.1;
+    // Bitwise operations in JavaScript operate on 32bit signed integers.
+    // Use the highest byte of `hash` to derive a repeatable zoom factor so
+    // each URL generates a different view of the fractal.
+    const zoom = 0.1 + (((hash >>> 24) & 0xFF) / 0xFF) * 0.1;
 
     function drawFractal(canvas, color, iterations) {
         const ctx = canvas.getContext('2d');
