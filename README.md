@@ -2,6 +2,15 @@
 A collection of esoteric userscripts for Firefox, mostly for personal use, but these might interest bug bounty hunters, security & vulnerability researchers, osint researchers, etc. Scripts tested with FireMonkey and the latest non-beta release of Firefox. Scripts are likely compatible with your favorite userscript manager like Tampermonkey and Violentmonkey. 
 
 
+## Included Scripts
+
+- **HTTPStatusChecker.js** – display HTTP status codes next to each link
+- **HeaderAnalyzer.js** – inspect HTTP response headers for common issues
+- **MelonHusk.js** – replace mentions of "Elon Musk" with random anagrams
+- **SameOriginBypass.js** – highlight potential same-origin policy bypasses
+- **UrlFractals.js** – draw a Mandelbrot fractal derived from the page URL
+- **UrlQRCode.js** – toggle a QR code for the current page (Ctrl+Shift+Q)
+
 # Disclaimer
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
